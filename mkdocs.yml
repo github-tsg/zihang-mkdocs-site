@@ -1,0 +1,34 @@
+site_name: 技术文档中心
+site_url: https://github-tsg.github.io/zihang-mkdocs-site/
+repo_url: https://github.com/github-tsg/zihang-mkdocs-site
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  
+  - 硬件设备:
+    - 硬件设备首页: hardware/index.md
+    - 电脑选购指南: hardware/computer-guide.md
+    
+  - 软件应用:
+    - 软件应用首页: software/index.md
+    - Windows优化技巧: software/windows-tips.md
+    
+  - 流程表单:
+    - 流程表单首页: workflows/index.md
+    - 设备报修流程: workflows/device-repair-proces.md
