@@ -24,6 +24,7 @@ nav:
   - 硬件设备:
     - 硬件设备首页: hardware/index.md
     - 电脑选购指南: hardware/computer-guide.md
+    - 笔记本开机无显示: hardware/NBkaijiwuxianshi.md
     
   - 软件应用:
     - 软件应用首页: software/index.md
