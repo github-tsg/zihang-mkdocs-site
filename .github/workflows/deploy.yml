@@ -30,6 +30,9 @@ jobs:
           pip install mkdocs
           pip install mkdocs-material
 
+      - name: Build Documentation
+        run: mkdocs build
+
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "github-actions[bot]"
