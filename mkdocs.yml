@@ -1,0 +1,42 @@
+﻿site_name: IT Documentation Center
+site_description: IT技术支持文档中心
+site_author: IT Department
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+    - scheme: dark
+      primary: blue
+      accent: blue
+
+nav:
+  - 首页: index.md
+  - 软件应用:
+    - 软件概览: software/README.md
+    - 操作系统: software/operating_system/README.md
+    - 办公软件: software/office_software/README.md
+    - 其他应用: software/other_apps/README.md
+  - 硬件设备:
+    - 硬件概览: hardware/README.md
+    - 打印机/扫描仪: hardware/printer_scanner/README.md
+    - 投影仪: hardware/projector/README.md
+    - 其他设备: hardware/other_devices/README.md
+  - 网络应用:
+    - 网络概览: network/README.md
+    - 网络管理: network/network_management/README.md
+    - VPN连接: network/vpn_connection/README.md
+    - 其他: network/other/README.md
+  - 表单流程:
+    - 表单概览: forms_workflow/README.md
+    - 表单填写: forms_workflow/form_filling/README.md
+    - 联系人信息: forms_workflow/contact_info/README.md
+    - 访问权限管理: forms_workflow/access_management/README.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
