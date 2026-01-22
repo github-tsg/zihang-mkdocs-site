@@ -22,8 +22,14 @@ nav:
   - 硬件设备:
     - 硬件概览: hardware/README.md
     - 打印机/扫描仪: hardware/printer_scanner/README.md
-    - 投影仪: hardware/projector/README.md
-    - 其他设备: hardware/other_devices/README.md
+    - 投影仪: hardware/projector/README.md  
+    - 其他设备:
+      - 开机无显示: hardware/other_devices/The_OA_machine_does_not_display_upon_startup.md
+      - 电池补充电或续航短: hardware/other_devices/battery_not_charging.md
+      - 键盘部分键失灵: hardware/other_devices/keyboard_partial_keys_not_working.md
+      - 无线无法连接或信号弱: hardware/other_devices/Wi-Fi_unable_to_connect.md
+      - 外界显示器不工作: hardware/other_devices/external_monitor_no_signal.md
+
   - 网络应用:
     - 网络概览: network/README.md
     - 网络管理: network/network_management/README.md
@@ -31,12 +37,23 @@ nav:
     - 其他: network/other/README.md
   - 表单流程:
     - 表单概览: forms_workflow/README.md
-    - 表单填写: forms_workflow/form_filling/README.md
-    - 联系人信息: forms_workflow/contact_info/README.md
-    - 访问权限管理: forms_workflow/access_management/README.md
+    - 表单填写: 
+      - BPM系统: forms_workflow/form_filling/BPM_System.md
+      - NF请款单提交后报错: forms_workflow/form_filling/Error_occurs_after_submitting_NF_payment_request_form.md
+      - SAP系统绩效目标填写: forms_workflow/form_filling/Filling_in_performance_objectives_in_SAP_system.md
+    - 联系人信息: 
+      - TSG通讯录: forms_workflow/contact_info/TSG_Technical_Support_Section_Contact_List.md
+    - 访问权限管理: 
+      - 本地管理员权限策略: forms_workflow/access_management/local_administrator_rights_policy.md
 
 markdown_extensions:
   - toc:
       permalink: true
   - tables
   - fenced_code
+
+plugins:
+  - search:
+      indexing: full  # 完整索引
+      lang: zh  # 中文分词
+      prebuild_index: true  # 预建索引
